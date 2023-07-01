@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bookstore</title>
+  <link rel="stylesheet" type="text/css" href="styles1.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Your website description goes here">
+  <meta name="keywords" content="your, website, keywords">
+  <meta name="author" content="Saurabh Gawali">
+  <meta property="og:title" content="Bookstore - Your Tagline">
+  <meta property="og:description" content="Your website description goes here">
+  <meta property="og:image" content="logo.jpeg">
+  <meta property="og:url" content="http://saurabhbookstore.com">
+  <meta property="og:type" content="http://saurabhbookstore.com">
+  <meta property="og:site_name" content="Bookstore">
+  <link rel="icon" type="image/x-icon" href="saurabh.ico">
+  <style>
+    #filter-container {
+      margin-bottom: 20px;
+    }
+
+    #genre-filter {
+      padding: 5px;
+      font-size: 16px;
+    }
+
+    .product {
+      background-color: #dde7e3; 
+    }
+    #filter-container {
+      margin-bottom: 20px;
+    }
+
+    #genre-filter {
+      padding: 5px;
+      font-size: 16px;
+    }
+
+    button #view-cart-button:hover {
+      background-color: red;
+    }
+
+    .my1 :hover {
+      background-color: red;
+    }
+
+    .my2 {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+    .cart-icon {
+      width: 16px;
+      height: 16px;
+      margin-right: 5px;
+    }
+    .logo{
+      width: 150px;
+      height: 100px;
+      margin-right: 5px;
+    }
+    
+  </style>
+  <script>
+    function search() {
+      var searchTerm = document.getElementById("search-input").value.toLowerCase();
+      var paragraphs = document.getElementsByTagName("p");
+      var matches = [];
+
+      for (var i = 0; i < paragraphs.length; i++) {
+        var text = paragraphs[i].textContent.toLowerCase();
+        if (text.includes(searchTerm)) {
+          matches.push(paragraphs[i]);
+        }
+      }
+
+      var searchResults = document.getElementById("search-results");
+      searchResults.innerHTML = "";
+
+      if (matches.length > 0) {
+        searchResults.innerHTML = "Search results for '" + searchTerm + "':";
+        for (var j = 0; j < matches.length; j++) {
+          var result = document.createElement("p");
+          result.textContent = matches[j].textContent;
+          searchResults.appendChild(result);
+        }
+      } else {
+        searchResults.innerHTML = "No results found for '" + searchTerm + "'.";
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <!-- <h1 style="font-size: 30px;">Bookstore</h1> -->
+    <!-- <div class="video-container"> -->
+    <!-- <video autoplay muted loop>
+          <source src="books.mp4" type="video/mp4">  
+          Your browser does not support the video tag.
+        </video> --><img src="logo.jpeg" alt="Logo" class="logo" style="text-align: center;">
+    <h1 style="font-size: 30px; flex: left;color: black;"> Bookstore</h1> <!-- </div> -->
+    <div id="search-container" class="my">
+      <input type="text" id="search-input" placeholder="Search your product">
+      <button id="search-button" onclick="search()" class="my2">Search</button>
+    </div>
+    <p id="search-results"></p>
+
+  </header>
+  <nav style="background-color: black; background-size: 30px;padding: 10px;">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="cart.html">Login/sign_up</a></li>
+      <li><a href="pro2.html">Buy Product's</a></li>
+      <li style="padding-left: 0;margin-left: 0;">
+        <button id="view-cart-button" onclick="openCartModal()" class="my1">
+          <img src="cart.jpeg" alt="Cart" class="cart-icon" style="background-size: cover;"> Cart
+        </button>
+        <div id="filter-container" class="my">
+          <select id="genre-filter" onchange="handleGenreFilter()" style="background-color: aqua;">
+            <option value="All">All Genres</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Romance">Romance</option>
+            <option value="Comics">Comics</option>
+          </select>
+        </div>
+      </li>
+      </li>
+      <li><a href="About.html">About Us</a></li>
+      <li><a href="cantact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div id="product-list"></div>
+  </div>
+  <div id="cart-modal" class="modal">
+    <div class="modal-content" style="background-color: rgb(50, 49, 49); background-size: cover;">
+      <span class="close" onclick="closeCartModal()">&times;</span>
+      <h2 style="color: #99d713;">Cart</h2>
+      <div id="cart-items" style="color: #99d713;"></div>
+      <a href="user_info.html" target="_blank" onclick="buy()"><button > buy</button></a>
+    </div>
+  </div>
+
+  <footer>
+    <!-- Footer section with additional navigation or links -->
+    <nav>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Sitemap</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2023 ONLINE Platform. All rights reserved.</p>
+  </footer>
+  <script src="script1.js">
+    <!-- Add this select element in the header section -->
+
+
+  </script>
+</body>
+
+</html>

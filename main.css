@@ -1,0 +1,38 @@
+.basic-1 {
+	padding-top: 7.75rem;
+	padding-bottom: 5.25rem;
+}
+
+.basic-1 .text-cont {
+	margin-bottom: 3rem;
+}
+
+.basic-1 .time {
+	margin-bottom: 0.5rem;
+	color: #0b36a8;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 1.5rem;
+	font-family: "Poppins";
+}
+
+.basic-1 h6 {
+	margin-bottom: 0.125rem;
+}
+.col-lg-4{
+        border: 2px solid black;
+}
+.first1{
+        width: 10px;
+}
+.second1{
+        width: 50%;
+        /* flex-direction: row; */
+}
+.third1{
+        width: 30%;
+        /* flex-direction: row; */
+}
+.row1{
+        display: flex;
+}

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Contact Us</title>
+  <link rel="stylesheet" type="text/css" href="styles1.css">
+  <link rel="stylesheet" type="text/css" href="styles2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Your website description goes here">
+  <meta name="keywords" content="your, website, keywords">
+  <meta name="author" content="Saurabh Gawali">
+  <meta property="og:title" content="Bookstore - Your Tagline">
+  <meta property="og:description" content="Your website description goes here">
+  <meta property="og:image" content="logo.jpeg">
+  <meta property="og:url" content="http://saurabhbookstore.com">
+  <meta property="og:type" content="http://saurabhbookstore.com">
+  <meta property="og:site_name" content="Bookstore">
+  <link rel="icon" type="image/x-icon" href="saurabh.ico">
+
+  <style>
+    /* CSS code */
+    #contact-info {
+      float: left;
+      background-color: #f9f9f9;
+      margin: 30px auto;
+      max-width: 400px;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    #contact-info h2 {
+      margin: 0 0 20px;
+    }
+
+    #contact-info img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-top: 20px;
+    }
+
+    #contact-info h3 {
+      margin-top: 10px;
+    }
+
+    #contact-info p {
+      margin-bottom: 10px;
+    }
+
+    body {
+      background-color: #f1f1f1;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #333;
+      padding: 20px;
+    }
+
+    h1 {
+      color: white;
+      margin: 0;
+    }
+
+    #search-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    #search-input {
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      width: 250px;
+    }
+
+    #search-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+
+    li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    li a {
+      color: white;
+      text-decoration: none;
+      padding: 5px 10px;
+    }
+
+    li a:hover {
+      background-color: #555;
+      border-radius: 4px;
+    }
+
+    main {
+      background-image: url(books.jpg);
+      background-attachment: fixed;
+      background-size: cover;
+      margin-bottom: 20px;
+    }
+
+    .additional #contact-info h2 {
+      margin: 0 0 20px;
+    }
+
+    #contact-info img {
+      width: 20%;
+      margin-top: 20px;
+      border-radius: 50%;
+    }
+
+    #contact-form {
+      clear: both;
+      background-color: #fff;
+      margin: 30px auto;
+      max-width: 400px;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #contact-form h2 {
+      margin: 0 0 20px;
+      text-align: center;
+    }
+
+    #contact-form form {
+      margin-bottom: 0;
+    }
+
+    #contact-form label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    #contact-form input[type="text"],
+    #contact-form input[type="email"],
+    #contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    #contact-form textarea {
+      resize: vertical;
+      height: 100px;
+    }
+
+    #contact-form button {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    #contact-form button:hover {
+      background-color: #45a049;
+    }
+
+    footer {
+      padding-top: 20px;
+      background-color: gray;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    .social-icons {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin-left: 10px;
+      color: #555;
+      font-size: 20px;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #00aced;
+      /* Change to your desired hover color */
+    }
+
+    .block {
+      flood-opacity: 0%;
+      display: flex;
+      font-family:Arial, Helvetica, sans-serif;
+      
+    }
+    #contact-info {
+      flex-direction: column;
+      color: #f1f1f1;
+      margin-right: 30px;
+      margin-left: 300px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      /* background-color: #fff;// */
+      background-image: url(cont1.jpeg);
+      /* border-style: double; */
+      border-style: dashed;
+      border-radius: 2px;
+      border-color: white;
+      border-width: 5px;
+      /* margin: 30px  ; */
+      max-width: 400px;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      border: 2px circle black;
+      /* bor */
+      /* border-radius: 2px; */
+    }
+    #additional-info {
+      /* float: right; */
+      flex-direction: column;
+      margin-left: 30px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      /* margin-right: 300px; */
+      background-image: url(cont1.jpeg);
+      border-style: dashed;
+      border-radius: 2px;
+      border-color: white;
+      border-width: 5px;
+      /* margin: 30px; */
+      max-width: 400px;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #E4E8F0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+.wrapper{
+    width: 500px;
+    max-width: 100%;
+    padding: 25px;
+    border-radius: 5px;
+    margin: 100px auto 0;
+    position: relative;
+    background: #fff;
+    box-shadow: 2px 2px 10px #00000080;
+    border-top: 10px solid #1ab188;
+}
+.wrapper h2{
+    font-size: 24px;
+    line-height: 24px;
+    padding: 15px;
+    margin-bottom: 40px;
+    text-align: center;
+    border: 1px dotted #333;
+}
+.input-group{
+    margin-bottom: 12px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+}
+
+.input-box{
+    width: 100%;
+    margin-right: 12px;
+    position: relative;
+}
+.input-box label{
+    position: absolute;
+    bottom: 43px;
+}
+.input-box:last-child{
+    margin-right: 0;
+}
+.name{
+    padding: 10px 10px 10px 40px;
+    width: 100%;
+    border: 1px solid #00000033;
+    outline: none;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    border-radius: 3px;
+    color: #333;
+    box-shadow: inset 0 1px 1px 0 #0000001a;
+}
+.name:focus{
+    -webkit-box-shadow:0 0 2px 1px #1ab18880;
+    -moz-box-shadow:0 0 2px 1px #1ab18880;
+    box-shadow:0 0 2px 1px #1ab18880;
+    border: 1px solid #1ab188;
+}
+.name:focus::-webkit-input-placeholder{
+    color: #333;
+}
+.input-group i{
+    height: 36px;
+    width: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    color: #13232fe6;
+    border-radius: 2px 0 0 2px;
+    transition: 0.3s;
+    font-size: 18px;
+    pointer-events: none;
+    border-right: 1px solid #cccccc;
+    border-bottom: none;
+}
+.name:focus + i{
+    color: #1ab188;
+    border-right: 1px solid #1ab188;
+}
+textarea{
+    height: 125px;
+}
+.comm i{
+    border: 1px solid #cccccc;
+}
+.comm label{
+    bottom: 133px;
+}
+button{
+    background: #1ab188;
+    border: 1px solid rgba(0,0,0,0.2);
+    color: #fff;
+    outline: none;
+    padding: 0 10px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 1px 0 rgba(255,255,255,0.6);
+    letter-spacing: 1px;
+    transition: 0.5s;
+    width: 100%;
+    font-size: 18px;
+}
+button:hover, button:focus{
+    background-color: #179677;
+}
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+
+  <div id="search-container" style="margin: 0;">
+    <input type="text" id="search-input" placeholder="Search your product">
+    <button id="search-button" onclick="search()">Search</button>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="cart.html">Login/Sign Up</a></li>
+      <li><a href="pro2.html">Buy Product</a></li>
+      <li><a href="#">My Products</a></li>
+      <li><a href="About.html">About Us</a></li>
+      <li><a href="cantact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <main style="margin: 0;">
+    <div class="block">
+      <div id="contact-info" style="border: 2px circle black;">
+        <h2>Contact Information</h2>
+        <h2>Our Founder</h2>
+        <img src="saurabh.jpg" alt="#" width="20%" class="my4">
+        <h3>Saurabh Gawali</h3>
+        <p><strong>Address:</strong> 123 Street, Shahartakli, Dist-Ahmednagar, India</p>
+        <p><strong>Email:</strong> karangawali@gmail.com</p>
+        <p><strong>Phone:</strong> +91 9960323121</p>
+       
+      </div>
+
+      <div id="additional-info" style="color: #ffffff;">
+        <h2>Additional Information</h2>
+        <br>
+        <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">"It wasn't until I started reading and found books they wouldn't let us read in school that I discovered you could be insane and happy and have a good life without being like everybody else." – John Waters</p>
+        <p><br></p>
+        <p style="text-indent: 2;">*YOU CAN FOLLOW US ON* : </p> 
+        <div class="social-icons" style="text-align: left; margin-left: 115px;">
+          <a href="#" target="_blank"><i class="fab fa-facebook" style="font-size: smaller;"> : Facebook</i></a><br>
+          <a href="#" target="_blank"><i class="fab fa-twitter" style="font-size: smaller;"> : Twitter</i></a><br>
+          <a href="https://www.instagram.com/its_saurabh_9063/" target="_blank"><i class="fab fa-instagram" style="font-size: smaller;"> : Instagram</i></a><br>
+          <a href="#" target="_blank"><i class="fab fa-snapchat" style="font-size: smaller;"> : Snapchat</i></a><br>
+          <a href="#" target="_blank"><i class="fab fa-youtube" style="font-size: smaller;"> : Youtube</i></a><br>
+          <a href="#" target="_blank"><i class="fab fa-pinterest" style="font-size: smaller;"> : Pinterest</i></a><br>
+          <a href="#" target="_blank"><i class="fab fa-linkedin" style="font-size: smaller;"> : Linkdin</i></a><br>
+        </div>
+      </div>
+
+    </div>
+    <div class="wrapper">
+      <h2>
+        Contact Us</h2>
+      <form action="#" method="POST">
+        <div class="input-group">
+          <div class="input-box">
+            <label>First Name</label>
+            <input type="text" placeholder="    " required class="name" style="margin-right: 10px;">
+            <i class="fa fa-user"></i>
+          </div>
+          <div class="input-box">
+            <label>Last Name</label>
+            <input type="text" placeholder="" required class="name">
+            <i class="fa fa-user"></i>
+          </div>
+        </div>
+        <div class="input-group">
+          <div class="input-box">
+            <label>Email</label>
+            <input type="email" placeholder="" required class="name">
+            <i class="fa fa-envelope"></i>
+          </div>
+          <div class="input-box">
+            <label>Mobile No</label>
+            <input type="tel" placeholder="Phone No." required class="name">
+            <i class="fa fa-phone"></i>
+          </div>
+        </div>
+        <div class="input-group">
+          <div class="input-box comm">
+            <label>Comments or Message</label>
+            <textarea cols="46" rows="3" placeholder="Write Your Message here" class="name"></textare>
+            <!-- <i class="fa fa-comment"></i>/ -->
+          </div>
+        </div>
+        <div class="button-group">
+          <div class="button-box">
+            <button type="submit"><i class="fa fa-paper-plane"></i> Send Message</button>
+        </div>
+        </div>
+    </form>
+  </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Your Company. All rights reserved.</p>
+    <script>
+      // <![CDATA[  <-- For SVG support
+      if ('WebSocket' in window) {
+        (function () {
+          function refreshCSS() {
+            var sheets = [].slice.call(document.getElementsByTagName("link"));
+            var head = document.getElementsByTagName("head")[0];
+            for (var i = 0; i < sheets.length; ++i) {
+              var elem = sheets[i];
+              var parent = elem.parentElement || head;
+              parent.removeChild(elem);
+              var rel = elem.rel;
+              if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+              }
+              parent.appendChild(elem);
+            }
+          }
+          var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+          var address = protocol + window.location.host + window.location.pathname + '/ws';
+          var socket = new WebSocket(address);
+          socket.onmessage = function (msg) {
+            if (msg.data == 'reload') window.location.reload();
+            else if (msg.data == 'refreshcss') refreshCSS();
+          };
+          if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+            console.log('Live reload enabled.');
+            sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+          }
+        })();
+      }
+      else {
+        console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+      }
+      // ]]>
+    </script>
+  </footer>
+</body>
+
+</html>

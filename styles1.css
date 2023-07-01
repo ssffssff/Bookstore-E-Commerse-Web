@@ -1,0 +1,217 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("books.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backface-visibility: visible;
+    background-attachment:fixed;
+  }
+  
+  header {
+    /* background-color: rgb(255, 0, 0); */
+    background-image: url(books1.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    /* backface-visibility: visible; */
+    /* background-attachment:fixed; */
+    color: #fff;
+    padding: 1px;
+    text-align:center;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li {
+      display: inline;
+      margin-right: 100px;
+  }
+  nav ul li a {
+      color: #fff;
+      text-decoration: none;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  
+  .product {
+    display: inline-block;
+    width: 200px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .product img {
+    width: 150px;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+  
+  .product h3 {
+    margin: 0;
+  }
+  
+  .product p {
+    margin: 10px 0;
+  }
+  
+  .button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /* Styling for footer */
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+footer nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+footer nav ul li a:hover {
+  color: #666;
+}
+  /* Styles for product list */
+.product {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Styles for cart items */
+.cart-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+#view-cart-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Styles for cart modal */
+.modal {
+  background-color: #4CAF50;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+}
+
+.close {
+  color: #b8c16a;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.my{
+  /* flex-direction: left; */
+  float: right;
+}
+.highlight {
+  background-color: yellow; /* Customize the highlight color as desired */
+}
+
+.highlighted {
+  animation: fadeHighlight 2s ease-in-out; /* Customize the animation properties as desired */
+}
+
+@keyframes fadeHighlight {
+  0% { background-color: yellow; opacity: 1; }
+  50% { opacity: 0.8; }
+  100% { opacity: 1; }
+}
+
+#search-results {
+  display: none;
+  margin-top: 20px;
+}
+
+#search-results ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#search-results li {
+  margin-bottom: 10px;
+}
+.cart-item {
+  
+  color: #ffffff; /* Set the text color to red */
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* background-color: #FF0000; */
+  font-size:20px;
+  text-decoration: double;
+  font-weight: bolder;
+  font-display: right;
+  text-decoration-color: azure;
+  text-orientation: sideways-right;
+  text-indent: 20;
+}
+
+.remove {
+  color: #f8f6f6; /* Set the text color to red */
+}
+.logo{
+  width: 150px;
+  height: 100px;
+  margin-right: 5px;
+}
